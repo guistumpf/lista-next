@@ -64,7 +64,7 @@ if(confirmed){
         setinput(e.target.value)
         console.log(e.target.value)
       }} />
-      <button onClick={add}>Add</button>
+      <button onClick={add} className="add">Add</button>
       <ul>
         {tarefas.map((tarefa) => {
           return <li key={tarefa.id}>
@@ -72,7 +72,7 @@ if(confirmed){
           </li>
       })}
     {tarefas.length > 0 && (
-      <button onClick={clear}>Delete All</button>
+      <button onClick={clear} className="del">Limpar 🗑️</button>
     )}
       </ul>
 
